@@ -1,1 +1,3 @@
-
+configure --prefix=  用途是：编译的时候 指定程序存放路径
+./configure --prefix="/home/zck/zhuchengkai/software/Python-3.6.4rc1"
+进入解压文件，文件中有configure文件
