@@ -43,3 +43,5 @@ pip3 install scipy
 pip3 install sklearn
 
 
+find . ! -name 2 -exec cp {} ../01 \;  将当前路径下的非2的文件复制到../01
+
