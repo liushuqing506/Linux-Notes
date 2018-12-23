@@ -53,7 +53,7 @@ rm -f second_clean/*   -f不提示是否删除文件的信息，直接删除
 find . ! -name 2 -exec cp {} ../01 \;  将当前路径下的非2的文件复制到../01
 split -l10 lsq.txt 将文件snplist每10行拆分并生成新的小文件xaa...
 
-grep  用法：grep [options] ‘pattern’ filename
+grep  用法：grep [options] ‘pattern’ filename  第一个参数是要匹配的，第二个参数是处理的文件
 -v （小写v）不匹配，即反向查找
 -i 匹配是不区分大小写
  -w 用于字符串精确匹配
