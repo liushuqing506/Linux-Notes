@@ -42,6 +42,19 @@ pip3 install numpy
 pip3 install scipy
 pip3 install sklearn
 
+通配符和正则表达式的区别：
+通配符，说白了一般只用于文件名匹配， 它是由shell解析的。
+shell大多将三个特殊符号当作通配符，它们是 * ? [...]， 
+其中 * 表示匹配任意长度的任意字符； ? 表示匹配一个任意字符， 而[...]则表示匹配括号中列出的字符中的任意一个。
+正则表达式，可以把正则表达式看成是一种字符串匹配模式标准。
+
+rm -f second_clean/*   -f不提示是否删除文件的信息，直接删除
 
 find . ! -name 2 -exec cp {} ../01 \;  将当前路径下的非2的文件复制到../01
+split -l10 lsq.txt 将文件snplist每10行拆分并生成新的小文件xaa...
+
+grep  用法：grep [options] ‘pattern’ filename
+-V 不匹配，即反向查找
+
+
 
