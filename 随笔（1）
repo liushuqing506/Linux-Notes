@@ -54,7 +54,17 @@ find . ! -name 2 -exec cp {} ../01 \;  将当前路径下的非2的文件复制�
 split -l10 lsq.txt 将文件snplist每10行拆分并生成新的小文件xaa...
 
 grep  用法：grep [options] ‘pattern’ filename
--V 不匹配，即反向查找
+-v （小写v）不匹配，即反向查找
+-i 匹配是不区分大小写
+ -w 用于字符串精确匹配
+ -B les test.txt |grep -w -B2 "96"精确匹配有96的行，并且把它前两行也一同输出 （B:before）
+ -A （A:after）之后几行
+ -E 以正则表达式的形式进行匹配
+ -c 统计匹配的个数
+ grep -w -A1 -F -f<(cut -f2 xab.txt) test.txt
+ 
+ 如果程序没有使用nohup和&，想放入后台：Ctrl + Z(先暂停)，jobs(查看进程号)，bg %进程号（将程序放入后台），disown -h %进程号
+ 
 
 
 
